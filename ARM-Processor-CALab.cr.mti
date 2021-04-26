@@ -21,12 +21,26 @@ Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 Top level modules:
 	AdderTB
 
+} {} {}} C:/code/ARM-Processor-CALab/IFStageRegTB.v {1 {vlog -work work C:/code/ARM-Processor-CALab/IFStageRegTB.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module IFStageRegTB
+
+Top level modules:
+	IFStageRegTB
+
 } {} {}} C:/code/ARM-Processor-CALab/MUX2to1.v {1 {vlog -work work C:/code/ARM-Processor-CALab/MUX2to1.v
 Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 -- Compiling module MUX2to1
 
 Top level modules:
 	MUX2to1
+
+} {} {}} C:/code/ARM-Processor-CALab/IFStageTB.v {1 {vlog -work work C:/code/ARM-Processor-CALab/IFStageTB.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module IFStageTB
+
+Top level modules:
+	IFStageTB
 
 } {} {}} C:/code/ARM-Processor-CALab/InstructionMemoryTB.v {1 {vlog -work work C:/code/ARM-Processor-CALab/InstructionMemoryTB.v
 Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
@@ -64,6 +78,13 @@ Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 
 Top level modules:
 	Adder
+
+} {} {}} C:/code/ARM-Processor-CALab/IFStageReg.v {1 {vlog -work work C:/code/ARM-Processor-CALab/IFStageReg.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module IFStageReg
+
+Top level modules:
+	IFStageReg
 
 } {} {}} C:/code/ARM-Processor-CALab/DataMemoryTB.v {1 {vlog -work work C:/code/ARM-Processor-CALab/DataMemoryTB.v
 Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
