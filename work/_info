@@ -4,7 +4,6 @@ K3
 cModel Technology
 Z0 dC:\code\ARM-Processor-CALab
 vMUX2t01
-!i10b 1
 Z1 !s100 H@eOIB@KUfVBdI9DG9lBX2
 Z2 I6VER4OKWdALVION;hk6GT2
 Z3 V]`XU;2l3`Gb:d9c1_oHc=3
@@ -15,11 +14,52 @@ Z7 FC:/code/ARM-Processor-CALab/MUX2to1.v
 L0 2
 Z8 OV;L;10.1d;51
 r1
-!s85 0
 31
-!s108 1619423400.014000
-!s107 C:/code/ARM-Processor-CALab/MUX2to1.v|
 Z9 !s90 -reportprogress|300|-work|work|C:/code/ARM-Processor-CALab/MUX2to1.v|
-!s101 -O0
 Z10 o-work work -O0
 Z11 n@m@u@x2t01
+Z12 !s108 1619424543.003000
+Z13 !s107 C:/code/ARM-Processor-CALab/MUX2to1.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vMUX2to1
+Z14 !s100 So:FZnA^?K]NjGzUOaZ?_2
+Z15 I0YeFRCKcioTLEdfW`fa222
+Z16 V4nVJnK<QRQ[4E=ioo8UzE2
+R4
+Z17 w1619424577
+R6
+R7
+L0 2
+R8
+r1
+31
+R9
+R10
+Z18 n@m@u@x2to1
+!i10b 1
+!s85 0
+Z19 !s108 1619424652.530000
+R13
+!s101 -O0
+vMUX2to1TB
+!i10b 1
+!s100 N0WXTj9>@NeJABTTHdfk_2
+Ig<gD3YV@k8B`@F4jI?TY[3
+Z20 VmEf[MzoD4e81OK]mG0dmV0
+R4
+w1619424648
+Z21 8C:/code/ARM-Processor-CALab/MUX2to1TB.v
+Z22 FC:/code/ARM-Processor-CALab/MUX2to1TB.v
+L0 2
+R8
+r1
+!s85 0
+31
+!s108 1619424652.593000
+!s107 C:/code/ARM-Processor-CALab/MUX2to1TB.v|
+Z23 !s90 -reportprogress|300|-work|work|C:/code/ARM-Processor-CALab/MUX2to1TB.v|
+!s101 -O0
+R10
+Z24 n@m@u@x2to1@t@b

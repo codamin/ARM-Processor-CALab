@@ -5,5 +5,5 @@ module MUX2t01(in1, in2, sel, out);
   input[Length-1:0] in2;
   input sel;
   output[Length-1:0] out;
-  
+  assign out = (sel==1'b0) ? in1 : in2;
 endmodule

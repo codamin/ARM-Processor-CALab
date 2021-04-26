@@ -1,5 +1,5 @@
 `timescale 1ns/1ns
-module MUX2t01(in1, in2, sel, out);
+module MUX2to1(in1, in2, sel, out);
   parameter Length = 32;
   input[Length-1:0] in1;
   input[Length-1:0] in2;
