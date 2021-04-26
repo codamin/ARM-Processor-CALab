@@ -3,143 +3,183 @@ K3
 13
 cModel Technology
 Z0 dC:\code\ARM-Processor-CALab
-vInstructionMemory
-Z1 !s100 51b>CkEfBI<nJ5@dYWm^63
-Z2 IM;VmPEV1G3;B9Pe<Q81b02
-Z3 VeTN3Bn2KUT7CcHciM2?e`2
+vDataMemory
+Z1 !s100 dBj58<M_1M5mh<_e=EWzl3
+Z2 In05D3__fYN6L[7MOS8Hg^1
+Z3 VKmZg@PXU_UL[l3E9b4G[l1
 Z4 dC:\code\ARM-Processor-CALab
-Z5 w1619428256
-Z6 8C:/code/ARM-Processor-CALab/InstructionMemory.v
-Z7 FC:/code/ARM-Processor-CALab/InstructionMemory.v
+Z5 w1619443341
+Z6 8C:/code/ARM-Processor-CALab/DataMemory.v
+Z7 FC:/code/ARM-Processor-CALab/DataMemory.v
 L0 2
 Z8 OV;L;10.1d;51
 r1
 31
-Z9 !s90 -reportprogress|300|-work|work|C:/code/ARM-Processor-CALab/InstructionMemory.v|
+Z9 !s90 -reportprogress|300|-work|work|C:/code/ARM-Processor-CALab/DataMemory.v|
 Z10 o-work work -O0
-Z11 n@instruction@memory
-Z12 !s108 1619429108.106000
-Z13 !s107 C:/code/ARM-Processor-CALab/InstructionMemory.v|
+Z11 n@data@memory
+!i10b 1
+!s85 0
+Z12 !s108 1619444737.487000
+Z13 !s107 C:/code/ARM-Processor-CALab/DataMemory.v|
+!s101 -O0
+vDataMemoryTB
+!i10b 1
+Z14 !s100 MAZ]fn[ee;bJMQ:3R3aaT3
+Z15 IF2Of<M8ClnRenc?QVkzQJ3
+Z16 VO3M2RCDP0YIFa4GkIWkcR1
+R4
+Z17 w1619443000
+Z18 8C:/code/ARM-Processor-CALab/DataMemoryTB.v
+Z19 FC:/code/ARM-Processor-CALab/DataMemoryTB.v
+L0 2
+R8
+r1
+!s85 0
+31
+!s108 1619444737.552000
+!s107 C:/code/ARM-Processor-CALab/DataMemoryTB.v|
+Z20 !s90 -reportprogress|300|-work|work|C:/code/ARM-Processor-CALab/DataMemoryTB.v|
+!s101 -O0
+R10
+Z21 n@data@memory@t@b
+vInstructionMemory
+Z22 !s100 51b>CkEfBI<nJ5@dYWm^63
+Z23 IM;VmPEV1G3;B9Pe<Q81b02
+Z24 VeTN3Bn2KUT7CcHciM2?e`2
+R4
+Z25 w1619428256
+Z26 8C:/code/ARM-Processor-CALab/InstructionMemory.v
+Z27 FC:/code/ARM-Processor-CALab/InstructionMemory.v
+L0 2
+R8
+r1
+31
+Z28 !s90 -reportprogress|300|-work|work|C:/code/ARM-Processor-CALab/InstructionMemory.v|
+R10
+Z29 n@instruction@memory
+Z30 !s108 1619444737.232000
+Z31 !s107 C:/code/ARM-Processor-CALab/InstructionMemory.v|
 !i10b 1
 !s85 0
 !s101 -O0
 vInstructionMemoryTB
-Z14 !s100 T60N6O>YDL]1z:o3HRWDF0
-Z15 IbbFO[h4enC4z4lSW`DEGL3
-Z16 VB;DEhI7B;NgY]ai0Bl[gS1
+Z32 !s100 T60N6O>YDL]1z:o3HRWDF0
+Z33 IbbFO[h4enC4z4lSW`DEGL3
+Z34 VB;DEhI7B;NgY]ai0Bl[gS1
 R4
-Z17 w1619427694
-Z18 8C:/code/ARM-Processor-CALab/InstructionMemoryTB.v
-Z19 FC:/code/ARM-Processor-CALab/InstructionMemoryTB.v
+Z35 w1619427694
+Z36 8C:/code/ARM-Processor-CALab/InstructionMemoryTB.v
+Z37 FC:/code/ARM-Processor-CALab/InstructionMemoryTB.v
 L0 2
 R8
 r1
 31
-Z20 !s90 -reportprogress|300|-work|work|C:/code/ARM-Processor-CALab/InstructionMemoryTB.v|
+Z38 !s90 -reportprogress|300|-work|work|C:/code/ARM-Processor-CALab/InstructionMemoryTB.v|
 R10
-Z21 n@instruction@memory@t@b
-Z22 !s108 1619429108.164000
-Z23 !s107 C:/code/ARM-Processor-CALab/InstructionMemoryTB.v|
+Z39 n@instruction@memory@t@b
+Z40 !s108 1619444737.298000
+Z41 !s107 C:/code/ARM-Processor-CALab/InstructionMemoryTB.v|
 !i10b 1
 !s85 0
 !s101 -O0
 vMUX2t01
-Z24 !s100 H@eOIB@KUfVBdI9DG9lBX2
-Z25 I6VER4OKWdALVION;hk6GT2
-Z26 V]`XU;2l3`Gb:d9c1_oHc=3
+Z42 !s100 H@eOIB@KUfVBdI9DG9lBX2
+Z43 I6VER4OKWdALVION;hk6GT2
+Z44 V]`XU;2l3`Gb:d9c1_oHc=3
 R4
-Z27 w1619423394
-Z28 8C:/code/ARM-Processor-CALab/MUX2to1.v
-Z29 FC:/code/ARM-Processor-CALab/MUX2to1.v
+Z45 w1619423394
+Z46 8C:/code/ARM-Processor-CALab/MUX2to1.v
+Z47 FC:/code/ARM-Processor-CALab/MUX2to1.v
 L0 2
 R8
 r1
 31
-Z30 !s90 -reportprogress|300|-work|work|C:/code/ARM-Processor-CALab/MUX2to1.v|
+Z48 !s90 -reportprogress|300|-work|work|C:/code/ARM-Processor-CALab/MUX2to1.v|
 R10
-Z31 n@m@u@x2t01
-Z32 !s108 1619424543.003000
-Z33 !s107 C:/code/ARM-Processor-CALab/MUX2to1.v|
+Z49 n@m@u@x2t01
+Z50 !s108 1619424543.003000
+Z51 !s107 C:/code/ARM-Processor-CALab/MUX2to1.v|
 !i10b 1
 !s85 0
 !s101 -O0
 vMUX2to1
-Z34 !s100 So:FZnA^?K]NjGzUOaZ?_2
-Z35 I0YeFRCKcioTLEdfW`fa222
-Z36 V4nVJnK<QRQ[4E=ioo8UzE2
+Z52 !s100 So:FZnA^?K]NjGzUOaZ?_2
+Z53 I0YeFRCKcioTLEdfW`fa222
+Z54 V4nVJnK<QRQ[4E=ioo8UzE2
 R4
-Z37 w1619424577
-R28
-R29
+Z55 w1619424577
+R46
+R47
 L0 2
 R8
 r1
 31
-R30
+R48
 R10
-Z38 n@m@u@x2to1
-Z39 !s108 1619429107.981000
-R33
+Z56 n@m@u@x2to1
+Z57 !s108 1619444737.110000
+R51
 !i10b 1
 !s85 0
 !s101 -O0
 vMUX2to1TB
-Z40 !s100 N0WXTj9>@NeJABTTHdfk_2
-Z41 Ig<gD3YV@k8B`@F4jI?TY[3
-Z42 VmEf[MzoD4e81OK]mG0dmV0
+Z58 !s100 N0WXTj9>@NeJABTTHdfk_2
+Z59 Ig<gD3YV@k8B`@F4jI?TY[3
+Z60 VmEf[MzoD4e81OK]mG0dmV0
 R4
-Z43 w1619424648
-Z44 8C:/code/ARM-Processor-CALab/MUX2to1TB.v
-Z45 FC:/code/ARM-Processor-CALab/MUX2to1TB.v
+Z61 w1619424648
+Z62 8C:/code/ARM-Processor-CALab/MUX2to1TB.v
+Z63 FC:/code/ARM-Processor-CALab/MUX2to1TB.v
 L0 2
 R8
 r1
 31
-Z46 !s90 -reportprogress|300|-work|work|C:/code/ARM-Processor-CALab/MUX2to1TB.v|
+Z64 !s90 -reportprogress|300|-work|work|C:/code/ARM-Processor-CALab/MUX2to1TB.v|
 R10
-Z47 n@m@u@x2to1@t@b
-Z48 !s108 1619429108.044000
-Z49 !s107 C:/code/ARM-Processor-CALab/MUX2to1TB.v|
+Z65 n@m@u@x2to1@t@b
+Z66 !s108 1619444737.171000
+Z67 !s107 C:/code/ARM-Processor-CALab/MUX2to1TB.v|
 !i10b 1
 !s85 0
 !s101 -O0
 vPC
-Z50 !s100 ^ZLhV8Kk2flVYebzn164d0
-Z51 I[KmI9^EYW<XlXaZ61zmU>0
-Z52 V>eoBM`88Zm?ezL`0ao6@60
+Z68 !s100 ^ZLhV8Kk2flVYebzn164d0
+Z69 I[KmI9^EYW<XlXaZ61zmU>0
+Z70 V>eoBM`88Zm?ezL`0ao6@60
 R4
-Z53 w1619428559
-Z54 8C:/code/ARM-Processor-CALab/PC.v
-Z55 FC:/code/ARM-Processor-CALab/PC.v
+Z71 w1619428559
+Z72 8C:/code/ARM-Processor-CALab/PC.v
+Z73 FC:/code/ARM-Processor-CALab/PC.v
 L0 2
 R8
 r1
 31
-Z56 !s90 -reportprogress|300|-work|work|C:/code/ARM-Processor-CALab/PC.v|
+Z74 !s90 -reportprogress|300|-work|work|C:/code/ARM-Processor-CALab/PC.v|
 R10
 n@p@c
+Z75 !s108 1619444737.364000
+Z76 !s107 C:/code/ARM-Processor-CALab/PC.v|
 !i10b 1
 !s85 0
-Z57 !s108 1619429108.223000
-Z58 !s107 C:/code/ARM-Processor-CALab/PC.v|
 !s101 -O0
 vPCTB
-!i10b 1
-Z59 !s100 2XIfd_WkLPddBi?a7TenF3
-Z60 IIG<<P<>L7ikejM0hRJ<=k1
-Z61 VT6?<Pf<D]5?KDWZMF:i3@2
+Z77 !s100 2XIfd_WkLPddBi?a7TenF3
+Z78 IIG<<P<>L7ikejM0hRJ<=k1
+Z79 VT6?<Pf<D]5?KDWZMF:i3@2
 R4
-Z62 w1619429103
-Z63 8C:/code/ARM-Processor-CALab/PCTB.v
-Z64 FC:/code/ARM-Processor-CALab/PCTB.v
+Z80 w1619429103
+Z81 8C:/code/ARM-Processor-CALab/PCTB.v
+Z82 FC:/code/ARM-Processor-CALab/PCTB.v
 L0 2
 R8
 r1
-!s85 0
 31
-!s108 1619429108.287000
-!s107 C:/code/ARM-Processor-CALab/PCTB.v|
-Z65 !s90 -reportprogress|300|-work|work|C:/code/ARM-Processor-CALab/PCTB.v|
-!s101 -O0
+Z83 !s90 -reportprogress|300|-work|work|C:/code/ARM-Processor-CALab/PCTB.v|
 R10
-Z66 n@p@c@t@b
+Z84 n@p@c@t@b
+Z85 !s108 1619444737.425000
+Z86 !s107 C:/code/ARM-Processor-CALab/PCTB.v|
+!i10b 1
+!s85 0
+!s101 -O0
