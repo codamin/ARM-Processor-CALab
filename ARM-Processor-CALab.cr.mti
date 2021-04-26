@@ -12,6 +12,13 @@ Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 Top level modules:
 	InstructionMemory
 
+} {} {}} C:/code/ARM-Processor-CALab/RegisterFile.v {1 {vlog -work work C:/code/ARM-Processor-CALab/RegisterFile.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module RegisterFile
+
+Top level modules:
+	RegisterFile
+
 } {} {}} C:/code/ARM-Processor-CALab/AdderTB.v {2 {vlog -work work C:/code/ARM-Processor-CALab/AdderTB.v
 Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 -- Compiling module AdderTB
@@ -49,6 +56,13 @@ Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 Top level modules:
 	InstructionMemoryTB
 
+} {} {}} C:/code/ARM-Processor-CALab/RegisterFileTB.v {1 {vlog -work work C:/code/ARM-Processor-CALab/RegisterFileTB.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module RegisterFileTB
+
+Top level modules:
+	RegisterFileTB
+
 } {} {}} C:/code/ARM-Processor-CALab/DataMemory.v {1 {vlog -work work C:/code/ARM-Processor-CALab/DataMemory.v
 Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 -- Compiling module DataMemory
@@ -63,6 +77,13 @@ Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 Top level modules:
 	PC
 
+} {} {}} C:/code/ARM-Processor-CALab/Main.v {1 {vlog -work work C:/code/ARM-Processor-CALab/Main.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module Main
+
+Top level modules:
+	Main
+
 } {} {}} C:/code/ARM-Processor-CALab/MUX2to1TB.v {2 {vlog -work work C:/code/ARM-Processor-CALab/MUX2to1TB.v
 Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 -- Compiling module MUX2to1TB
@@ -71,6 +92,13 @@ Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 
 Top level modules:
 	MUX2to1TB
+
+} {} {}} C:/code/ARM-Processor-CALab/ALUTB.v {1 {vlog -work work C:/code/ARM-Processor-CALab/ALUTB.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module ALUTB
+
+Top level modules:
+	ALUTB
 
 } {} {}} C:/code/ARM-Processor-CALab/Adder.v {1 {vlog -work work C:/code/ARM-Processor-CALab/Adder.v
 Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
