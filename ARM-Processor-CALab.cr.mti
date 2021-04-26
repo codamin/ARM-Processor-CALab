@@ -1,25 +1,9 @@
-C:/code/ARM-Processor-CALab/MUX2to1TB.v {2 {vlog -work work C:/code/ARM-Processor-CALab/MUX2to1TB.v
-Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
--- Compiling module MUX2to1TB
-** Warning: C:/code/ARM-Processor-CALab/MUX2to1TB.v(14): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
-
-
-Top level modules:
-	MUX2to1TB
-
-} {} {}} C:/code/ARM-Processor-CALab/IFStage.v {1 {vlog -work work C:/code/ARM-Processor-CALab/IFStage.v
+C:/code/ARM-Processor-CALab/IFStage.v {1 {vlog -work work C:/code/ARM-Processor-CALab/IFStage.v
 Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 -- Compiling module IFStage
 
 Top level modules:
 	IFStage
-
-} {} {}} C:/code/ARM-Processor-CALab/PC.v {1 {vlog -work work C:/code/ARM-Processor-CALab/PC.v
-Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
--- Compiling module PC
-
-Top level modules:
-	PC
 
 } {} {}} C:/code/ARM-Processor-CALab/InstructionMemory.v {1 {vlog -work work C:/code/ARM-Processor-CALab/InstructionMemory.v
 Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
@@ -28,19 +12,21 @@ Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 Top level modules:
 	InstructionMemory
 
-} {} {}} C:/code/ARM-Processor-CALab/DataMemory.v {1 {vlog -work work C:/code/ARM-Processor-CALab/DataMemory.v
+} {} {}} C:/code/ARM-Processor-CALab/AdderTB.v {2 {vlog -work work C:/code/ARM-Processor-CALab/AdderTB.v
 Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
--- Compiling module DataMemory
+-- Compiling module AdderTB
+** Warning: C:/code/ARM-Processor-CALab/AdderTB.v(12): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+
 
 Top level modules:
-	DataMemory
+	AdderTB
 
-} {} {}} C:/code/ARM-Processor-CALab/PCTB.v {1 {vlog -work work C:/code/ARM-Processor-CALab/PCTB.v
+} {} {}} C:/code/ARM-Processor-CALab/MUX2to1.v {1 {vlog -work work C:/code/ARM-Processor-CALab/MUX2to1.v
 Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
--- Compiling module PCTB
+-- Compiling module MUX2to1
 
 Top level modules:
-	PCTB
+	MUX2to1
 
 } {} {}} C:/code/ARM-Processor-CALab/InstructionMemoryTB.v {1 {vlog -work work C:/code/ARM-Processor-CALab/InstructionMemoryTB.v
 Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
@@ -49,11 +35,48 @@ Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 Top level modules:
 	InstructionMemoryTB
 
+} {} {}} C:/code/ARM-Processor-CALab/DataMemory.v {1 {vlog -work work C:/code/ARM-Processor-CALab/DataMemory.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module DataMemory
+
+Top level modules:
+	DataMemory
+
+} {} {}} C:/code/ARM-Processor-CALab/PC.v {1 {vlog -work work C:/code/ARM-Processor-CALab/PC.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module PC
+
+Top level modules:
+	PC
+
+} {} {}} C:/code/ARM-Processor-CALab/MUX2to1TB.v {2 {vlog -work work C:/code/ARM-Processor-CALab/MUX2to1TB.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module MUX2to1TB
+** Warning: C:/code/ARM-Processor-CALab/MUX2to1TB.v(14): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+
+
+Top level modules:
+	MUX2to1TB
+
+} {} {}} C:/code/ARM-Processor-CALab/Adder.v {1 {vlog -work work C:/code/ARM-Processor-CALab/Adder.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module Adder
+
+Top level modules:
+	Adder
+
 } {} {}} C:/code/ARM-Processor-CALab/DataMemoryTB.v {1 {vlog -work work C:/code/ARM-Processor-CALab/DataMemoryTB.v
 Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 -- Compiling module DataMemoryTB
 
 Top level modules:
 	DataMemoryTB
+
+} {} {}} C:/code/ARM-Processor-CALab/PCTB.v {1 {vlog -work work C:/code/ARM-Processor-CALab/PCTB.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module PCTB
+
+Top level modules:
+	PCTB
 
 } {} {}}
