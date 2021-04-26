@@ -1,8 +1,24 @@
-C:/code/ARM-Processor-CALab/MUX2to1.v {1 {vlog -work work C:/code/ARM-Processor-CALab/MUX2to1.v
+C:/code/ARM-Processor-CALab/MUX2to1TB.v {2 {vlog -work work C:/code/ARM-Processor-CALab/MUX2to1TB.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module MUX2to1TB
+** Warning: C:/code/ARM-Processor-CALab/MUX2to1TB.v(14): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+
+
+Top level modules:
+	MUX2to1TB
+
+} {} {}} C:/code/ARM-Processor-CALab/MUX2to1.v {1 {vlog -work work C:/code/ARM-Processor-CALab/MUX2to1.v
 Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 -- Compiling module MUX2to1
 
 Top level modules:
 	MUX2to1
+
+} {} {}} C:/code/ARM-Processor-CALab/InstructionMemoryTB.v {1 {vlog -work work C:/code/ARM-Processor-CALab/InstructionMemoryTB.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module InstructionMemoryTB
+
+Top level modules:
+	InstructionMemoryTB
 
 } {} {}}
