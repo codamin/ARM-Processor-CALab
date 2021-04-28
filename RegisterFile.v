@@ -1,8 +1,8 @@
 `timescale 1ns/1ns
-module RegisterFile(rst, clk, src1, src2, res1, res2, writeBackEn, destWB, resultWB);
+module RegisterFile(rst, clk, src1, src2, res1, res2, writeBackEn, destWB, valueWB);
   input rst, clk, writeBackEn;
   input[3:0] src1, src2, destWB;
-  input[31:0] resultWB;
+  input[31:0] valueWB;
   output[31:0] res1, res2;
   reg[31:0] memory[0:15];
   
@@ -16,7 +16,7 @@ module RegisterFile(rst, clk, src1, src2, res1, res2, writeBackEn, destWB, resul
         memory[i] = 32'b0;
     end
     else if(writeBackEn) begin
-      memory[destWB] <= resultWB;
+      memory[destWB] <= valueWB;
     end
   end
 endmodule

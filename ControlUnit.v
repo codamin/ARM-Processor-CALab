@@ -1,7 +1,6 @@
 `timescale 1ns/1ns
 
-module ControlUnit(clk, rst, mode, opcode, S, S_UpdateSig, branch, exeCMD, memWriteEn, memReadEn, writeBackEn);
-    input clk, rst;
+module ControlUnit(mode, opcode, S, S_UpdateSig, branch, exeCMD, memWriteEn, memReadEn, writeBackEn);
     input[1:0] mode;
     input[3:0] opcode;
     input S;

@@ -1,9 +1,9 @@
 C:/Users/ASUS/Desktop/CA-LAB-P1-ARM/IDStage.v {0 {vlog -work work -vopt -stats=none C:/Users/ASUS/Desktop/CA-LAB-P1-ARM/IDStage.v
 Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
 -- Compiling module IDStage
-** Error: C:/Users/ASUS/Desktop/CA-LAB-P1-ARM/IDStage.v(5): In, out, or inout does not appear in port list: freeze.
+** Error (suppressible): C:/Users/ASUS/Desktop/CA-LAB-P1-ARM/IDStage.v(14): (vlog-2388) 'writeBackEn' already declared in this scope (IDStage) at C:/Users/ASUS/Desktop/CA-LAB-P1-ARM/IDStage.v(9).
 
-} {4.0 5.0} {}} C:/Users/ASUS/Desktop/CA-LAB-P1-ARM/RegisterFileTB.v {1 {vlog -work work -vopt -stats=none C:/Users/ASUS/Desktop/CA-LAB-P1-ARM/RegisterFileTB.v
+} {} {}} C:/Users/ASUS/Desktop/CA-LAB-P1-ARM/RegisterFileTB.v {1 {vlog -work work -vopt -stats=none C:/Users/ASUS/Desktop/CA-LAB-P1-ARM/RegisterFileTB.v
 Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
 -- Compiling module RegisterFileTB
 
@@ -36,6 +36,13 @@ Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
 -- Compiling module IFStage
 ** Error (suppressible): C:/Users/ASUS/Desktop/CA-LAB-P1-ARM/IFStage.v(4): (vlog-2388) 'branchAddress' already declared in this scope (IFStage) at C:/Users/ASUS/Desktop/CA-LAB-P1-ARM/IFStage.v(3).
 
+} {} {}} C:/Users/ASUS/Desktop/CA-LAB-P1-ARM/ConditionCheck.v {1 {vlog -work work -vopt -stats=none C:/Users/ASUS/Desktop/CA-LAB-P1-ARM/ConditionCheck.v
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+-- Compiling module ConditionCheck
+
+Top level modules:
+	ConditionCheck
+
 } {} {}} C:/Users/ASUS/Desktop/CA-LAB-P1-ARM/Main.v {1 {vlog -work work -vopt -stats=none C:/Users/ASUS/Desktop/CA-LAB-P1-ARM/Main.v
 Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
 -- Compiling module Main
@@ -57,6 +64,13 @@ Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
 
 Top level modules:
 	MUX2to1
+
+} {} {}} C:/Users/ASUS/Desktop/CA-LAB-P1-ARM/ControlUnit.v {1 {vlog -work work -vopt -stats=none C:/Users/ASUS/Desktop/CA-LAB-P1-ARM/ControlUnit.v
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+-- Compiling module ControlUnit
+
+Top level modules:
+	ControlUnit
 
 } {} {}} C:/Users/ASUS/Desktop/CA-LAB-P1-ARM/PCTB.v {1 {vlog -work work -vopt -stats=none C:/Users/ASUS/Desktop/CA-LAB-P1-ARM/PCTB.v
 Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
@@ -114,6 +128,13 @@ Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
 
 Top level modules:
 	MUX2to1TB
+
+} {} {}} C:/Users/ASUS/Desktop/CA-LAB-P1-ARM/ControlUnitTB.v {1 {vlog -work work -vopt -stats=none C:/Users/ASUS/Desktop/CA-LAB-P1-ARM/ControlUnitTB.v
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+-- Compiling module ControlUnitTB
+
+Top level modules:
+	ControlUnitTB
 
 } {} {}} C:/Users/ASUS/Desktop/CA-LAB-P1-ARM/IFStageRegTB.v {1 {vlog -work work -vopt -stats=none C:/Users/ASUS/Desktop/CA-LAB-P1-ARM/IFStageRegTB.v
 Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020

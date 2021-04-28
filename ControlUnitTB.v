@@ -1,14 +1,13 @@
 `timescale 1ns/1ns
 
 module ControlUnitTB();
-    reg clk=0, rst=0;
     reg[1:0] mode;
     reg[3:0] opcode;
     reg S;
     wire [3:0] exeCMD;
     wire S_UpdateSig, branch, memWriteEn, memReadEn, writeBackEn;
 
-  ControlUnit UUT(clk, rst, mode, opcode, S, S_UpdateSig, branch, exeCMD, memWriteEn, memReadEn, writeBackEn);
+  ControlUnit UUT(mode, opcode, S, S_UpdateSig, branch, exeCMD, memWriteEn, memReadEn, writeBackEn);
   
   initial begin
         mode=2'b11; opcode=4'b0000; S=1'b0; //10'bz
