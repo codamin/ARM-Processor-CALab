@@ -1,6 +1,6 @@
 `timescale 1ns/1ns
 
-module IFStageTB();
+module IDStageTB();
 
   reg rst=0, clk=0, freeze=0,hazard=0;
   reg [31:0] PCIn, instructionReg;
