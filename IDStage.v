@@ -1,36 +1,39 @@
 
 `timescale 1ns/1ns
 
-module IDStage(rst, clk, flush, freeze, PCIn, instructionReg, writeBackEn, destWB, valueWB, hazard, statusReg,
-  S_UpdateSig, branch, memWriteEn, memReadEn, writeBackEnOut, exeCMD, res1, res2, PC, signedImm24, R_d, isImmidiate, shiftOperand);
+module IDStage(rst, clk, flush, freeze, PCIn, instructionReg, writeBackEnIn, destWB, valueWB, hazard, statusReg,
+  S_UpdateSig, branch, memWriteEn, memReadEn, writeBackEn, exeCMD, res1, res2, PC, signedImm24, R_d, isImmidiate, shiftOperand);
   //inputs from IF Stage 
   input rst, clk, freeze, flush, hazard;
   input[31:0] PCIn, instructionReg;
   //inputs from WB stage
-  input writeBackEn;
+  input writeBackEnIn;
   input[3:0] destWB, statusReg;
   input[31:0] valueWB;
 
   // outputs wires
-  output S_UpdateSig, branch, memWriteEn, memReadEn, writeBackEnOut;
+  output S_UpdateSig, branch, memWriteEn, memReadEn, writeBackEn;
   output[3:0] exeCMD;
   output[31:0] res1, res2;
   output[31:0] PC;
   output[23:0] signedImm24;
-  output R_d;
+  output[3:0] R_d;
   output isImmidiate;
   output shiftOperand;
  
   // internal wires
+  wire S_UpdateSig_internal, branch_internal, memWriteEn_internal, memReadEn_internal, writeBackEn_internal;
+  wire[3:0] exeCMD_internal;
   wire[3:0] src1, src2, destWB;
   wire conditionOut;
-  wire[2:0] mode;
+  wire[1:0] mode;
   wire[3:0] opcode, cond;
   wire S;
-  wire R_m;
+  wire[3:0] R_m;
   wire zeroSignalsEn;
 
   assign PC = PCIn;
+  assign cond = instructionReg[31:28];
   assign src1 = instructionReg[19:16];
   assign mode = instructionReg[27:26];
   assign isImmidiate = instructionReg[25];
@@ -40,12 +43,13 @@ module IDStage(rst, clk, flush, freeze, PCIn, instructionReg, writeBackEn, destW
   assign shiftOperand = instructionReg[23:0];
   assign R_m = instructionReg[3:0];
   assign zeroSignalsEn = hazard || !conditionOut;
+  assign signedImm24 = instructionReg[23:0];
 
   // components
-  MUX2to1#(4) mux1(, R_d, memWriteEn, src2);
-  RegisterFile registerFile(rst, clk, src1, src2, res1, res2, writeBackEn, destWB, valueWB);
-  ControlUnit cu(rst, clk, mode, opcode, S, S_UpdateSig, branch, exeCMD, memWriteEn, memReadEn, writeBackEnOut);
+  MUX2to1#(4) mux1(R_m, R_d, memWriteEn, src2);
+  RegisterFile registerFile(rst, clk, src1, src2, res1, res2, writeBackEnIn, destWB, valueWB);
+  ControlUnit cu(mode, opcode, S, S_UpdateSig_internal, branch_internal, exeCMD_internal, memWriteEn_internal, memReadEn_internal, writeBackEn_internal);
   ConditionCheck conditionCheck(cond, statusReg, conditionOut);
-  MUX2to1#(9) mux2({S_UpdateSig, branch, exeCMD, memWriteEn, memReadEn, writeBackEnOut}, 9'b0, zeroSignalsEn,
-                  {S_UpdateSig, branch, exeCMD, memWriteEn, memReadEn, writeBackEnOut});
+  MUX2to1#(9) mux2({S_UpdateSig_internal, branch_internal, exeCMD_internal, memWriteEn_internal, memReadEn_internal, writeBackEn_internal}, 9'b0, zeroSignalsEn,
+                  {S_UpdateSig, branch, exeCMD, memWriteEn, memReadEn, writeBackEn});
 endmodule
