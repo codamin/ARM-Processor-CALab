@@ -10,37 +10,27 @@ z2
 cModel Technology
 Z0 dC:/Users/ASUS/Desktop/CA-LAB-P1-ARM
 T_opt
-!s110 1619590148
-Vk`Xc33M@D8jz8R=Y^d=cH2
-04 13 4 work ControlUnitTB fast 0
-=6-982cbc180862-6088fc04-75-1660
+!s110 1619612633
+V27E4Q;o`Bgh75Mb;]<IJh1
+04 14 4 work RegisterFileTB fast 0
+=1-982cbc180862-608953d9-2eb-16c0
 Z1 o-quiet -auto_acc_if_foreign -work work +acc
 Z2 tCvgOpt 0
 n@_opt
 Z3 OL;O;2020.4;71
 R0
 T_opt1
-!s110 1619609974
-VRm59LzoZ_m>IkOElA84NC3
+!s110 1619612147
+Vbn9<fg7:>oJcmLkc9[n@Z3
 04 16 4 work ConditionCheckTB fast 0
-=2-982cbc180862-60894976-10a-3678
+=1-982cbc180862-608951f3-2f5-32b4
 R1
 R2
 n@_opt1
 R3
 R0
-T_opt2
-!s110 1619588447
-VIWA9O;K]^@E]k6oM=dDEf2
-04 12 4 work DataMemoryTB fast 0
-=1-982cbc180862-6088f55e-309-3580
-o-quiet -auto_acc_if_foreign -work work
-R2
-n@_opt2
-R3
-R0
 vAdder
-Z4 !s110 1619609386
+Z4 !s110 1619621523
 !i10b 1
 !s100 OjK46IUKY`@ISdV3^U6Pd0
 Z5 !s11b Dg1SIo80bB@j0V0VzS_@n1
@@ -49,14 +39,14 @@ R0
 Z6 w1619518250
 8C:/Users/ASUS/Desktop/CA-LAB-P1-ARM/Adder.v
 FC:/Users/ASUS/Desktop/CA-LAB-P1-ARM/Adder.v
-!i122 238
+!i122 387
 Z7 L0 2 7
 Z8 VDg1SIo80bB@j0V0VzS_@n1
 Z9 OL;L;2020.4;71
 r1
 !s85 0
 31
-Z10 !s108 1619609386.000000
+Z10 !s108 1619621523.000000
 !s107 C:/Users/ASUS/Desktop/CA-LAB-P1-ARM/Adder.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/ASUS/Desktop/CA-LAB-P1-ARM/Adder.v|
 !i113 0
@@ -73,7 +63,7 @@ R0
 R6
 8C:/Users/ASUS/Desktop/CA-LAB-P1-ARM/AdderTB.v
 FC:/Users/ASUS/Desktop/CA-LAB-P1-ARM/AdderTB.v
-!i122 239
+!i122 388
 Z12 L0 2 14
 R8
 R9
@@ -97,8 +87,8 @@ R0
 R6
 8C:/Users/ASUS/Desktop/CA-LAB-P1-ARM/ALU.v
 FC:/Users/ASUS/Desktop/CA-LAB-P1-ARM/ALU.v
-!i122 240
-Z13 L0 2 20
+!i122 389
+L0 2 20
 R8
 R9
 r1
@@ -121,7 +111,7 @@ R0
 R6
 8C:/Users/ASUS/Desktop/CA-LAB-P1-ARM/ALUTB.v
 FC:/Users/ASUS/Desktop/CA-LAB-P1-ARM/ALUTB.v
-!i122 241
+!i122 390
 L0 2 26
 R8
 R9
@@ -136,23 +126,23 @@ R11
 R2
 n@a@l@u@t@b
 vConditionCheck
-!s110 1619609961
+Z13 !s110 1619621526
 !i10b 1
-!s100 [GJE3GELCAD^f6_O8_?1`3
+!s100 PN>B^YIl^[zbbD2:M@lN@0
 R5
-I4Un]0zzV6Wzzd=V3k0j^c0
+I1?mIJnBa7fjCoS^;9zeMk2
 R0
-w1619609382
+w1619612124
 8C:/Users/ASUS/Desktop/CA-LAB-P1-ARM/ConditionCheck.v
 FC:/Users/ASUS/Desktop/CA-LAB-P1-ARM/ConditionCheck.v
-!i122 261
-L0 3 26
+!i122 409
+L0 3 29
 R8
 R9
 r1
 !s85 0
 31
-!s108 1619609961.000000
+Z14 !s108 1619621526.000000
 !s107 C:/Users/ASUS/Desktop/CA-LAB-P1-ARM/ConditionCheck.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/ASUS/Desktop/CA-LAB-P1-ARM/ConditionCheck.v|
 !i113 0
@@ -160,23 +150,23 @@ R11
 R2
 n@condition@check
 vConditionCheckTB
-!s110 1619609979
+R13
 !i10b 1
-!s100 23iJUmcfA2cE:]h9HWIR[0
+!s100 Y9gNhX?O9lO7cZnQD<Qce3
 R5
-In[_?KGl^B09QR5ZAS6gFe2
+IM:9f8zfE`ogZ_FkTVdfoN3
 R0
-w1619609948
+w1619612109
 8C:/Users/ASUS/Desktop/CA-LAB-P1-ARM/ConditionCheckTB.v
 FC:/Users/ASUS/Desktop/CA-LAB-P1-ARM/ConditionCheckTB.v
-!i122 263
+!i122 410
 L0 3 27
 R8
 R9
 r1
 !s85 0
 31
-!s108 1619609979.000000
+R14
 !s107 C:/Users/ASUS/Desktop/CA-LAB-P1-ARM/ConditionCheckTB.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/ASUS/Desktop/CA-LAB-P1-ARM/ConditionCheckTB.v|
 !i113 0
@@ -193,7 +183,7 @@ R0
 w1619601392
 8C:/Users/ASUS/Desktop/CA-LAB-P1-ARM/ControlUnit.v
 FC:/Users/ASUS/Desktop/CA-LAB-P1-ARM/ControlUnit.v
-!i122 242
+!i122 391
 L0 3 41
 R8
 R9
@@ -208,7 +198,7 @@ R11
 R2
 n@control@unit
 vControlUnitTB
-R4
+Z15 !s110 1619621524
 !i10b 1
 !s100 Vb;O_^EhX`Cho@KR;?<hn3
 R5
@@ -217,14 +207,14 @@ R0
 w1619601402
 8C:/Users/ASUS/Desktop/CA-LAB-P1-ARM/ControlUnitTB.v
 FC:/Users/ASUS/Desktop/CA-LAB-P1-ARM/ControlUnitTB.v
-!i122 243
+!i122 392
 L0 3 21
 R8
 R9
 r1
 !s85 0
 31
-R10
+Z16 !s108 1619621524.000000
 !s107 C:/Users/ASUS/Desktop/CA-LAB-P1-ARM/ControlUnitTB.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/ASUS/Desktop/CA-LAB-P1-ARM/ControlUnitTB.v|
 !i113 0
@@ -232,7 +222,7 @@ R11
 R2
 n@control@unit@t@b
 vDataMemory
-R4
+R15
 !i10b 1
 !s100 ^]UImgC9EgNH@ZC]=Q7P70
 R5
@@ -241,14 +231,14 @@ R0
 R6
 8C:/Users/ASUS/Desktop/CA-LAB-P1-ARM/DataMemory.v
 FC:/Users/ASUS/Desktop/CA-LAB-P1-ARM/DataMemory.v
-!i122 244
+!i122 393
 L0 2 23
 R8
 R9
 r1
 !s85 0
 31
-R10
+R16
 !s107 C:/Users/ASUS/Desktop/CA-LAB-P1-ARM/DataMemory.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/ASUS/Desktop/CA-LAB-P1-ARM/DataMemory.v|
 !i113 0
@@ -256,7 +246,7 @@ R11
 R2
 n@data@memory
 vDataMemoryTB
-R4
+R15
 !i10b 1
 !s100 [l<cX8<@6d:W1zL9O>mh<3
 R5
@@ -265,46 +255,94 @@ R0
 R6
 8C:/Users/ASUS/Desktop/CA-LAB-P1-ARM/DataMemoryTB.v
 FC:/Users/ASUS/Desktop/CA-LAB-P1-ARM/DataMemoryTB.v
-!i122 245
+!i122 394
 L0 2 28
 R8
 R9
 r1
 !s85 0
 31
-R10
+R16
 !s107 C:/Users/ASUS/Desktop/CA-LAB-P1-ARM/DataMemoryTB.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/ASUS/Desktop/CA-LAB-P1-ARM/DataMemoryTB.v|
 !i113 0
 R11
 R2
 n@data@memory@t@b
-vIFStageReg
-Z14 !s110 1619609396
+vIDStage
+R15
 !i10b 1
-!s100 KQ5KhfnVK43GU7:M]`V2]3
+!s100 7:eC5dz3iAJRTFYi2W]JP2
 R5
-IznBa;72j<Ge3;6`Bd[jWG3
+I`BKP=z0zKn[L7[zA0B5gZ2
 R0
-R6
-8C:/Users/ASUS/Desktop/CA-LAB-P1-ARM/IFStageReg.v
-FC:/Users/ASUS/Desktop/CA-LAB-P1-ARM/IFStageReg.v
-!i122 246
-R13
+w1619618271
+8C:/Users/ASUS/Desktop/CA-LAB-P1-ARM/IDStage.v
+FC:/Users/ASUS/Desktop/CA-LAB-P1-ARM/IDStage.v
+!i122 395
+L0 4 48
 R8
 R9
 r1
 !s85 0
 31
-Z15 !s108 1619609396.000000
-!s107 C:/Users/ASUS/Desktop/CA-LAB-P1-ARM/IFStageReg.v|
-!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/ASUS/Desktop/CA-LAB-P1-ARM/IFStageReg.v|
+R16
+!s107 C:/Users/ASUS/Desktop/CA-LAB-P1-ARM/IDStage.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/ASUS/Desktop/CA-LAB-P1-ARM/IDStage.v|
+!i113 0
+R11
+R2
+n@i@d@stage
+vIFStage
+R15
+!i10b 1
+!s100 2d]M7jJfoF=Hfn;j@j0gc3
+R5
+IaI<gO`=2jj409ZaH0>IBA0
+R0
+w1619617986
+8C:/Users/ASUS/Desktop/CA-LAB-P1-ARM/IFStage.v
+FC:/Users/ASUS/Desktop/CA-LAB-P1-ARM/IFStage.v
+!i122 396
+L0 3 14
+R8
+R9
+r1
+!s85 0
+31
+R16
+!s107 C:/Users/ASUS/Desktop/CA-LAB-P1-ARM/IFStage.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/ASUS/Desktop/CA-LAB-P1-ARM/IFStage.v|
+!i113 0
+R11
+R2
+n@i@f@stage
+vIFStageReg
+R13
+!i10b 1
+!s100 1fDRP4g6@KTLfPfVNfF>12
+R5
+IJkNg>1nONV`UJ_XM_LPLT0
+R0
+w1619618578
+8C:/Users/ASUS/Desktop/CA-LAB-P1-ARM/IDStageReg.v
+FC:/Users/ASUS/Desktop/CA-LAB-P1-ARM/IDStageReg.v
+!i122 411
+L0 3 49
+R8
+R9
+r1
+!s85 0
+31
+R14
+!s107 C:/Users/ASUS/Desktop/CA-LAB-P1-ARM/IDStageReg.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/ASUS/Desktop/CA-LAB-P1-ARM/IDStageReg.v|
 !i113 0
 R11
 R2
 n@i@f@stage@reg
 vIFStageRegTB
-R14
+R15
 !i10b 1
 !s100 K[<lT01GA_l2Fi;<`NG092
 R5
@@ -313,14 +351,14 @@ R0
 R6
 8C:/Users/ASUS/Desktop/CA-LAB-P1-ARM/IFStageRegTB.v
 FC:/Users/ASUS/Desktop/CA-LAB-P1-ARM/IFStageRegTB.v
-!i122 247
+!i122 398
 L0 2 22
 R8
 R9
 r1
 !s85 0
 31
-R15
+R16
 !s107 C:/Users/ASUS/Desktop/CA-LAB-P1-ARM/IFStageRegTB.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/ASUS/Desktop/CA-LAB-P1-ARM/IFStageRegTB.v|
 !i113 0
@@ -328,31 +366,31 @@ R11
 R2
 n@i@f@stage@reg@t@b
 vIFStageTB
-R14
+!s110 1619621760
 !i10b 1
-!s100 k_KY54S]j=Z65@98hOzW83
+!s100 h33kbzc[1><Q[@89RNHnZ2
 R5
-I@@dQTNmV_h_MYCfRbcT[?1
+Ih;0mBDcZN9_g>7PoN5RdM1
 R0
-R6
-8C:/Users/ASUS/Desktop/CA-LAB-P1-ARM/IFStageTB.v
-FC:/Users/ASUS/Desktop/CA-LAB-P1-ARM/IFStageTB.v
-!i122 248
-L0 2 15
+w1619621670
+8C:/Users/ASUS/Desktop/CA-LAB-P1-ARM/IDStageTB.v
+FC:/Users/ASUS/Desktop/CA-LAB-P1-ARM/IDStageTB.v
+!i122 415
+L0 3 32
 R8
 R9
 r1
 !s85 0
 31
-R15
-!s107 C:/Users/ASUS/Desktop/CA-LAB-P1-ARM/IFStageTB.v|
-!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/ASUS/Desktop/CA-LAB-P1-ARM/IFStageTB.v|
+!s108 1619621760.000000
+!s107 C:/Users/ASUS/Desktop/CA-LAB-P1-ARM/IDStageTB.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/ASUS/Desktop/CA-LAB-P1-ARM/IDStageTB.v|
 !i113 0
 R11
 R2
 n@i@f@stage@t@b
 vInstructionMemory
-R14
+R15
 !i10b 1
 !s100 ZHIALko0?H3G7K?ldIhW00
 R5
@@ -361,14 +399,14 @@ R0
 R6
 8C:/Users/ASUS/Desktop/CA-LAB-P1-ARM/InstructionMemory.v
 FC:/Users/ASUS/Desktop/CA-LAB-P1-ARM/InstructionMemory.v
-!i122 249
+!i122 400
 L0 2 19
 R8
 R9
 r1
 !s85 0
 31
-R15
+R16
 !s107 C:/Users/ASUS/Desktop/CA-LAB-P1-ARM/InstructionMemory.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/ASUS/Desktop/CA-LAB-P1-ARM/InstructionMemory.v|
 !i113 0
@@ -376,7 +414,7 @@ R11
 R2
 n@instruction@memory
 vInstructionMemoryTB
-R14
+R15
 !i10b 1
 !s100 7V8c_>3AD@O`A?nzE8Ko_0
 R5
@@ -385,14 +423,14 @@ R0
 R6
 8C:/Users/ASUS/Desktop/CA-LAB-P1-ARM/InstructionMemoryTB.v
 FC:/Users/ASUS/Desktop/CA-LAB-P1-ARM/InstructionMemoryTB.v
-!i122 250
+!i122 401
 R12
 R8
 R9
 r1
 !s85 0
 31
-R15
+R16
 !s107 C:/Users/ASUS/Desktop/CA-LAB-P1-ARM/InstructionMemoryTB.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/ASUS/Desktop/CA-LAB-P1-ARM/InstructionMemoryTB.v|
 !i113 0
@@ -400,7 +438,7 @@ R11
 R2
 n@instruction@memory@t@b
 vMain
-R14
+R15
 !i10b 1
 !s100 nC0YlDd<_[h>Rd8kH;JYz0
 R5
@@ -409,14 +447,14 @@ R0
 w1619530521
 8C:/Users/ASUS/Desktop/CA-LAB-P1-ARM/Main.v
 FC:/Users/ASUS/Desktop/CA-LAB-P1-ARM/Main.v
-!i122 251
+!i122 402
 R7
 R8
 R9
 r1
 !s85 0
 31
-R15
+R16
 !s107 C:/Users/ASUS/Desktop/CA-LAB-P1-ARM/Main.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/ASUS/Desktop/CA-LAB-P1-ARM/Main.v|
 !i113 0
@@ -424,23 +462,23 @@ R11
 R2
 n@main
 vMUX2to1
-Z16 !s110 1619609397
+R15
 !i10b 1
-!s100 :hEi>QjC4Ui8nTdLLkW<;2
+!s100 z=fc@DJF04hnRP@1^kF;22
 R5
-IhM4T07KP5UNUBeUR6IOj72
+IO_@zmDUi?JkDP>mF;HJW=1
 R0
-R6
+w1619610595
 8C:/Users/ASUS/Desktop/CA-LAB-P1-ARM/MUX2to1.v
 FC:/Users/ASUS/Desktop/CA-LAB-P1-ARM/MUX2to1.v
-!i122 252
-R7
+!i122 403
+L0 3 7
 R8
 R9
 r1
 !s85 0
 31
-R15
+R16
 !s107 C:/Users/ASUS/Desktop/CA-LAB-P1-ARM/MUX2to1.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/ASUS/Desktop/CA-LAB-P1-ARM/MUX2to1.v|
 !i113 0
@@ -448,7 +486,7 @@ R11
 R2
 n@m@u@x2to1
 vMUX2to1TB
-R16
+R15
 !i10b 1
 !s100 N3l`ebIh=29[`nE>WUTWY1
 R5
@@ -457,14 +495,14 @@ R0
 R6
 8C:/Users/ASUS/Desktop/CA-LAB-P1-ARM/MUX2to1TB.v
 FC:/Users/ASUS/Desktop/CA-LAB-P1-ARM/MUX2to1TB.v
-!i122 253
+!i122 404
 L0 2 16
 R8
 R9
 r1
 !s85 0
 31
-Z17 !s108 1619609397.000000
+R16
 !s107 C:/Users/ASUS/Desktop/CA-LAB-P1-ARM/MUX2to1TB.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/ASUS/Desktop/CA-LAB-P1-ARM/MUX2to1TB.v|
 !i113 0
@@ -472,7 +510,7 @@ R11
 R2
 n@m@u@x2to1@t@b
 vPC
-R16
+Z17 !s110 1619621525
 !i10b 1
 !s100 Q0UBB?B<LWi^9I[GmVLei1
 R5
@@ -481,14 +519,14 @@ R0
 R6
 8C:/Users/ASUS/Desktop/CA-LAB-P1-ARM/PC.v
 FC:/Users/ASUS/Desktop/CA-LAB-P1-ARM/PC.v
-!i122 254
+!i122 405
 L0 2 12
 R8
 R9
 r1
 !s85 0
 31
-R17
+R16
 !s107 C:/Users/ASUS/Desktop/CA-LAB-P1-ARM/PC.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/ASUS/Desktop/CA-LAB-P1-ARM/PC.v|
 !i113 0
@@ -496,7 +534,7 @@ R11
 R2
 n@p@c
 vPCTB
-R16
+R17
 !i10b 1
 !s100 G@XoWAz=E@31>jY>[M3JZ0
 R5
@@ -505,14 +543,14 @@ R0
 R6
 8C:/Users/ASUS/Desktop/CA-LAB-P1-ARM/PCTB.v
 FC:/Users/ASUS/Desktop/CA-LAB-P1-ARM/PCTB.v
-!i122 255
+!i122 406
 L0 2 3
 R8
 R9
 r1
 !s85 0
 31
-R17
+!s108 1619621525.000000
 !s107 C:/Users/ASUS/Desktop/CA-LAB-P1-ARM/PCTB.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/ASUS/Desktop/CA-LAB-P1-ARM/PCTB.v|
 !i113 0
@@ -520,7 +558,7 @@ R11
 R2
 n@p@c@t@b
 vRegisterFile
-R16
+!s110 1619621549
 !i10b 1
 !s100 8cU^INmaR;eAP^6LZk==G1
 R5
@@ -529,14 +567,14 @@ R0
 w1619599781
 8C:/Users/ASUS/Desktop/CA-LAB-P1-ARM/RegisterFile.v
 FC:/Users/ASUS/Desktop/CA-LAB-P1-ARM/RegisterFile.v
-!i122 256
+!i122 412
 L0 2 21
 R8
 R9
 r1
 !s85 0
 31
-R17
+!s108 1619621549.000000
 !s107 C:/Users/ASUS/Desktop/CA-LAB-P1-ARM/RegisterFile.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/ASUS/Desktop/CA-LAB-P1-ARM/RegisterFile.v|
 !i113 0
@@ -544,7 +582,7 @@ R11
 R2
 n@register@file
 vRegisterFileTB
-R16
+R13
 !i10b 1
 !s100 dWhM?UFL:jA<<@@H?WV?42
 R5
@@ -553,14 +591,14 @@ R0
 w1619599802
 8C:/Users/ASUS/Desktop/CA-LAB-P1-ARM/RegisterFileTB.v
 FC:/Users/ASUS/Desktop/CA-LAB-P1-ARM/RegisterFileTB.v
-!i122 257
+!i122 408
 L0 2 27
 R8
 R9
 r1
 !s85 0
 31
-R17
+R14
 !s107 C:/Users/ASUS/Desktop/CA-LAB-P1-ARM/RegisterFileTB.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/ASUS/Desktop/CA-LAB-P1-ARM/RegisterFileTB.v|
 !i113 0

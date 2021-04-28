@@ -1,6 +1,7 @@
 `timescale 1ns/1ns
+
 module IFStage(rst, clk, freeze, branchTaken, branchAddress, PCR, instructionR);
-  input rst, clk, freeze, branchTaken, branchAddress;
+  input rst, clk, freeze, branchTaken;
   input[31:0] branchAddress;
   output[31:0] PCR, instructionR;
   

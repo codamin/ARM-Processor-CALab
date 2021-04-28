@@ -1,4 +1,5 @@
 `timescale 1ns/1ns
+
 module IFStageReg(clk, rst, freeze, flush, PCIn, instructionIn, PC, instruction);
   input clk, rst, freeze, flush;
   input[31:0] PCIn, instructionIn;

@@ -1,8 +1,7 @@
 `timescale 1ns/1ns
 
 module ConditionCheckTB();
-    reg[3:0] cond;
-    reg[3:0]statusReg;
+    reg[3:0] cond, reg[3:0] statusReg;
     wire conditionOut;
 
   ConditionCheck UUT(cond, statusReg, conditionOut);

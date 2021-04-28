@@ -1,9 +1,12 @@
 `timescale 1ns/1ns
 
-module ConditionCheck(cond, N, Z, C, V, conditionOut);
-input N, Z, C, V;
+module ConditionCheck(cond, statusReg, conditionOut);
 input[3:0] cond;
+input[3:0] statusReg;
 output reg conditionOut;
+
+wire N, Z, C, V;
+assign {N, Z, C, V} = statusReg;
 
 always @(*)
     case(cond)
