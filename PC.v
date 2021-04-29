@@ -4,9 +4,9 @@ module PC(rst, clk, freeze, in, out);
   input[31:0] in;
   output reg[31:0] out;
   
-  always@(posedge clk) begin
+  always@(posedge clk, posedge rst) begin
     if(rst)
-      out <= 32'b00000000000000000000000000000000;
+      out <= 32'b0;
     else if(freeze == 1'b0)
       out <= in;
   end

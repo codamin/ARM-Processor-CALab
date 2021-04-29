@@ -5,7 +5,7 @@ module IFStageReg(clk, rst, freeze, flush, PCIn, instructionIn, PC, instruction)
   input[31:0] PCIn, instructionIn;
   output reg[31:0] PC, instruction;
   
-  always@(posedge clk) begin
+  always@(posedge clk, posedge rst) begin
     if(rst) begin
       PC <= 32'b0;
       instruction <= 32'b0;

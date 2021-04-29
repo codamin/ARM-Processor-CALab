@@ -11,7 +11,7 @@ module DataMemory(rst, clk, readSig, writeSig, address, dataIn, dataOut);
   assign addr = (address - 11'b10000000000) >> 2;
   assign dataOut = memory[addr];
   
-  always@(posedge clk) begin
+  always@(posedge clk, posedge rst) begin
     if(rst) begin
       for(i=0; i<65536; i=i+1) begin
         memory[i] = 32'b0;

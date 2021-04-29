@@ -10,7 +10,7 @@ module RegisterFile(rst, clk, src1, src2, res1, res2, writeBackEn, destWB, value
   assign res2 = memory[src2];
   
   integer i;
-  always@(negedge clk) begin
+  always@(negedge clk, posedge rst) begin
     if(rst) begin
       for(i=0; i<16; i=i+1)
         memory[i] = 32'b0;
