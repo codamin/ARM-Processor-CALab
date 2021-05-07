@@ -1,6 +1,6 @@
 `timescale 1ns/1ns
 
-module IFStageReg(clk, rst, freeze, flush, S_UpdateSigIn, branchIn, memWriteEnIn, memReadEnIn,
+module IDStageReg(rst, clk, freeze, flush, S_UpdateSigIn, branchIn, memWriteEnIn, memReadEnIn,
  writeBackEnIn, exeCMDIn, res1In, res2In, PCIn, signedImm24In, R_dIn, isImmidiateIn, shiftOperandIn,
   S_UpdateSig, branch, memWriteEn, memReadEn, writeBackEn, exeCMD, res1, res2, PC, signedImm24, R_d,
    isImmidiate, shiftOperand);
@@ -11,7 +11,7 @@ module IFStageReg(clk, rst, freeze, flush, S_UpdateSigIn, branchIn, memWriteEnIn
   input[31:0] res1In, res2In;
   input[31:0] PCIn;
   input[23:0] signedImm24In;
-  input R_dIn;
+  input[3:0] R_dIn;
   input isImmidiateIn;
   input shiftOperandIn;
 
@@ -20,7 +20,7 @@ module IFStageReg(clk, rst, freeze, flush, S_UpdateSigIn, branchIn, memWriteEnIn
   output reg[31:0] res1, res2;
   output reg[31:0] PC;
   output reg[23:0] signedImm24;
-  output reg R_d;
+  output reg[3:0] R_d;
   output reg isImmidiate;
   output reg shiftOperand;
   
