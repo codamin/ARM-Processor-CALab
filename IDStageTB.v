@@ -2,7 +2,7 @@
 
 module IDStageTB();
 
-  reg rst=0, clk=0, flush=0, freeze=0, hazard=0;
+  reg rst=0, clk=0, flush=0, hazard=0;
   reg [31:0] PCIn=43'b0, instructionReg;
   reg writeBackEnIn=0;
   reg[3:0] destWB=4'b0001, statusReg=4'b0;
@@ -16,9 +16,10 @@ module IDStageTB();
   wire[3:0] R_d;
   wire isImmidiate;
   wire shiftOperand;
+  wire carry;
 
-  IDStage idStage(rst, clk, flush, freeze, PCIn, instructionReg, writeBackEnIn, destWB, valueWB, hazard, statusReg,
-  S_UpdateSig, branch, memWriteEn, memReadEn, writeBackEn, exeCMD, res1, res2, PC, signedImm24, R_d, isImmidiate, shiftOperand);
+  IDStage idStage(rst, clk, flush, PCIn, instructionReg, writeBackEnIn, destWB, valueWB, hazard, statusReg,
+  S_UpdateSig, branch, memWriteEn, memReadEn, writeBackEn, exeCMD, res1, res2, PC, signedImm24, R_d, isImmidiate, shiftOperand, carry);
 
   always #10 clk = ~clk;
   initial begin

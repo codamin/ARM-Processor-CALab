@@ -18,6 +18,7 @@ module Main(rst, clk);
   wire isImmidiate_ID_OUT;
   wire shiftOperand_ID_OUT;
   wire branchTaken_EXE_OUT;
+  wire carry;
  //*****************************************************************************************************temp
   assign hazard = 1'b0; 
   assign statusReg_EXE_OUT = 4'b0;
@@ -32,8 +33,8 @@ module Main(rst, clk);
    S_UpdateSig_ID_OUT, branch_ID_OUT, memWriteEn_ID_OUT, memReadEn_ID_OUT, writeBackEn_ID_OUT, exeCMD_ID_OUT, res1_ID_OUT, res2_ID_OUT, PC_ID_OUT, signedImm24_ID_OUT,
     R_d_ID_OUT, isImmidiate_ID_OUT, shiftOperand_ID_OUT);
 
-  IDStageReg iDStageReg(rst, clk, freeze, flush, S_UpdateSig_ID_OUT, branch_ID_OUT, memWriteEn_ID_OUT, memReadEn_ID_OUT,
+  IDStageReg iDStageReg(rst, clk, flush, S_UpdateSig_ID_OUT, branch_ID_OUT, memWriteEn_ID_OUT, memReadEn_ID_OUT,
  writeBackEn_ID_OUT, exeCMD_ID_OUT, res1_ID_OUT, res2_ID_OUT, PC_ID_OUT, signedImm24_ID_OUT, R_d_ID_OUT, isImmidiate_ID_OUT, shiftOperand_ID_OUT,
   S_UpdateSig_ID_R_OUT, branch_ID_R_OUT, memWriteEn_ID_R_OUT, memReadEn_ID_R_OUT, writeBackEn_ID_R_OUT, exeCMD_ID_R_OUT, res1_ID_R_OUT, res2_ID_R_OUT,
-   PC_ID_R_OUT, signedImm24_ID_R_OUT, R_d_ID_R_OUT, isImmidiate_ID_R_OUT, shiftOperand_ID_R_OUT);
+   PC_ID_R_OUT, signedImm24_ID_R_OUT, R_d_ID_R_OUT, isImmidiate_ID_R_OUT, shiftOperand_ID_R_OUT, carry);
 endmodule

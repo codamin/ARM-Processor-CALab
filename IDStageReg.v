@@ -1,11 +1,11 @@
 `timescale 1ns/1ns
 
-module IDStageReg(rst, clk, freeze, flush, S_UpdateSigIn, branchIn, memWriteEnIn, memReadEnIn,
- writeBackEnIn, exeCMDIn, res1In, res2In, PCIn, signedImm24In, R_dIn, isImmidiateIn, shiftOperandIn,
+module IDStageReg(rst, clk, flush, S_UpdateSigIn, branchIn, memWriteEnIn, memReadEnIn,
+ writeBackEnIn, exeCMDIn, res1In, res2In, PCIn, signedImm24In, R_dIn, isImmidiateIn, shiftOperandIn, carryIn,
   S_UpdateSig, branch, memWriteEn, memReadEn, writeBackEn, exeCMD, res1, res2, PC, signedImm24, R_d,
-   isImmidiate, shiftOperand);
+   isImmidiate, shiftOperand, carry);
 
-  input clk, rst, freeze, flush;
+  input clk, rst, flush;
   input S_UpdateSigIn, branchIn, memWriteEnIn, memReadEnIn, writeBackEnIn;
   input[3:0] exeCMDIn;
   input[31:0] res1In, res2In;
@@ -14,6 +14,7 @@ module IDStageReg(rst, clk, freeze, flush, S_UpdateSigIn, branchIn, memWriteEnIn
   input[3:0] R_dIn;
   input isImmidiateIn;
   input shiftOperandIn;
+  input carryIn;
 
   output reg S_UpdateSig, branch, memWriteEn, memReadEn, writeBackEn;
   output reg[3:0] exeCMD;
@@ -23,6 +24,7 @@ module IDStageReg(rst, clk, freeze, flush, S_UpdateSigIn, branchIn, memWriteEnIn
   output reg[3:0] R_d;
   output reg isImmidiate;
   output reg shiftOperand;
+  output reg carry;
   
 
   always@(posedge clk, posedge rst) begin
@@ -45,6 +47,7 @@ module IDStageReg(rst, clk, freeze, flush, S_UpdateSigIn, branchIn, memWriteEnIn
         R_d          <= R_dIn;
         isImmidiate  <= isImmidiateIn;
         shiftOperand <= shiftOperandIn;
+        carry        <= carryIn;
     end
 
   end
