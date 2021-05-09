@@ -36,4 +36,7 @@ module Main(rst, clk);
  writeBackEn_ID_OUT, exeCMD_ID_OUT, res1_ID_OUT, res2_ID_OUT, PC_ID_OUT, signedImm24_ID_OUT, R_d_ID_OUT, isImmidiate_ID_OUT, shiftOperand_ID_OUT,
   S_UpdateSig_ID_R_OUT, branch_ID_R_OUT, memWriteEn_ID_R_OUT, memReadEn_ID_R_OUT, writeBackEn_ID_R_OUT, exeCMD_ID_R_OUT, res1_ID_R_OUT, res2_ID_R_OUT,
    PC_ID_R_OUT, signedImm24_ID_R_OUT, R_d_ID_R_OUT, isImmidiate_ID_R_OUT, shiftOperand_ID_R_OUT);
+   
+   module EXEStage(rst, clk, carry, EXE_CMD, MEM_R_EN, MEM_W_EN, PC, Val_Rn, Val_Rm, imm, Shift_operand, Signed_imm_24, SR, ALU_result, Br_addr, status);
+  EXEStage eXEStage(rst, clk, 
 endmodule
