@@ -1,7 +1,7 @@
 `timescale 1ns/1ns
 module DataMemoryTB();
   reg rst, clk=0, readSig, writeSig;
-  reg[17:0] address;
+  reg[31:0] address;
   reg[31:0] dataIn;
   wire[31:0] dataOut;
   
@@ -14,7 +14,7 @@ module DataMemoryTB();
     #28 rst=0;
     readSig=0;
     writeSig=0;
-    address=18'b0;
+    address=32'b0;
     dataIn=32'b0;
     
     #25 dataIn = 32'b01010101010101010101010101010101;

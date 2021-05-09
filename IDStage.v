@@ -1,10 +1,9 @@
-
 `timescale 1ns/1ns
 
-module IDStage(rst, clk, flush, freeze, PCIn, instructionReg, writeBackEnIn, destWB, valueWB, hazard, statusReg,
+module IDStage(rst, clk, flush, PCIn, instructionReg, writeBackEnIn, destWB, valueWB, hazard, statusReg,
   S_UpdateSig, branch, memWriteEn, memReadEn, writeBackEn, exeCMD, res1, res2, PC, signedImm24, R_d, isImmidiate, shiftOperand);
   //inputs from IF Stage 
-  input rst, clk, freeze, flush, hazard;
+  input rst, clk, flush, hazard;
   input[31:0] PCIn, instructionReg;
   //inputs from WB stage
   input writeBackEnIn;
@@ -19,7 +18,7 @@ module IDStage(rst, clk, flush, freeze, PCIn, instructionReg, writeBackEnIn, des
   output[23:0] signedImm24;
   output[3:0] R_d;
   output isImmidiate;
-  output shiftOperand;
+  output [11:0]shiftOperand;
  
   // internal wires
   wire S_UpdateSig_internal, branch_internal, memWriteEn_internal, memReadEn_internal, writeBackEn_internal;
@@ -40,7 +39,7 @@ module IDStage(rst, clk, flush, freeze, PCIn, instructionReg, writeBackEnIn, des
   assign opcode = instructionReg[24:21];
   assign S = instructionReg[20];
   assign R_d = instructionReg[15:12];
-  assign shiftOperand = instructionReg[23:0];
+  assign shiftOperand = instructionReg[11:0];
   assign R_m = instructionReg[3:0];
   assign zeroSignalsEn = hazard || !conditionOut;
   assign signedImm24 = instructionReg[23:0];

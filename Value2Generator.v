@@ -6,12 +6,12 @@ module Value2Generator(LoS, Val_Rm, imm, shift_operand, out);
   output[31:0] out;
   
   wire[31:0] rotated_value;
-  RotateImmShift(shift_operand, rotated_value);
+  RotateImmShift rotateImmShift(shift_operand, rotated_value);
   
-  wire[31:0] immShiftedValue;
+  wire[31:0] immShiftValue;
   ImmediateShift immShift(shift_operand, Val_Rm, immShiftValue);
   
-  assign second = LoS ? {20'b0, shift_operand} : imm ? rotated_value : immShiftValue;
+  assign out = LoS ? {20'b0, shift_operand} : imm ? rotated_value : immShiftValue;
 endmodule
 
 module RotateImmShift(in, out);
