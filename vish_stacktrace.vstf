@@ -1,0 +1,42 @@
+# Current time Mon May 10 08:41:52 2021
+# ModelSim SE Stack Trace
+# Program = vish
+# Id = "2020.4"
+# Version = "2020.10"
+# Date = "Oct 13 2020"
+# Platform = win64
+
+Exception c0000005 has occurred at address 4020058b. Traceback:
+# 0    0x4020058b: 'Mtirpc_Init + 0x900cb'
+# 1    0x4020038e: 'Mtirpc_Init + 0x8fece'
+# 2    0x401bab94: 'Mtirpc_Init + 0x4a6d4'
+# 3    0x401b4b60: 'Mtirpc_Init + 0x446a0'
+# 4    0x71867103: 'TclNRRunCallbacks + 0x63'
+# 5    0xa1f40d9a: 'Itcl_EvalMemberCode + 0x3ba'
+# 6    0xa1f41f5b: 'Itcl_ExecMethod + 0x23b'
+# 7    0xa1f49a19: 'Itcl_EvalArgs + 0x1c9'
+# 8    0xa1f44cf1: 'Itcl_HandleInstance + 0x2c1'
+# 9    0x71867103: 'TclNRRunCallbacks + 0x63'
+# 10   0xa1f40d9a: 'Itcl_EvalMemberCode + 0x3ba'
+# 11   0xa1f41f5b: 'Itcl_ExecMethod + 0x23b'
+# 12   0xa1f49a19: 'Itcl_EvalArgs + 0x1c9'
+# 13   0xa1f44cf1: 'Itcl_HandleInstance + 0x2c1'
+# 14   0x71867103: 'TclNRRunCallbacks + 0x63'
+# 15   0x71868974: 'Tcl_EvalEx + 0xa34'
+# 16   0x71867f68: 'Tcl_EvalEx + 0x28'
+# 17   0x71a3431a: 'Tk_BindEvent + 0x91a'
+# 18   0x71a6bd41: 'TkBindEventProc + 0x291'
+# 19   0x71a7c614: 'Tk_HandleEvent + 0x2f4'
+# 20   0x71a7b2da: 'TkDeleteThreadExitHandler + 0x31a'
+# 21   0x7191a56d: 'Tcl_ServiceEvent + 0xed'
+# 22   0x7191a9e4: 'Tcl_DoOneEvent + 0x184'
+# 23   0x71a7aee5: 'Tk_MainLoop + 0x25'
+# 24   0x71abd282: 'Tk_MainEx + 0x932'
+# 25   0x40193fba: 'Mtirpc_Init + 0x23afa'
+# 26   0x40196947: 'Mtirpc_Init + 0x26487'
+# 27   0x407062af: 'Tclsqlite3_Init + 0x1b9bf'
+# 28   0xe6b67bd4: 'BaseThreadInitThunk + 0x14'
+# 29   0xe8a8ce51: 'RtlUserThreadStart + 0x21'
+StackWalk failed 0
+# End of Stack Trace
+

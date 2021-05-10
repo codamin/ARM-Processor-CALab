@@ -5,9 +5,9 @@ module ControlUnitTB();
     reg[3:0] opcode;
     reg S;
     wire [3:0] exeCMD;
-    wire S_UpdateSig, branch, memWriteEn, memReadEn, writeBackEn;
+    wire S_UpdateSig, branch, memWriteEn, memReadEn, WB_EN;
 
-  ControlUnit UUT(mode, opcode, S, S_UpdateSig, branch, exeCMD, memWriteEn, memReadEn, writeBackEn);
+  ControlUnit UUT(mode, opcode, S, S_UpdateSig, branch, exeCMD, memWriteEn, memReadEn, WB_EN);
   
   initial begin
         mode=2'b11; opcode=4'b0000; S=1'b0; //10'bz

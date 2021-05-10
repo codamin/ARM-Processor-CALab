@@ -6,7 +6,7 @@ module MainTB();
   always #10 clk=~clk;
   initial begin
     rst = 1;
-    #25 rst = 0;
-    #1000 $stop;
+    #5 rst = 0;
+    #5000 $stop;
   end
 endmodule
