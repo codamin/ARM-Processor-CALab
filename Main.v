@@ -63,7 +63,7 @@ module Main(rst, clk);
   EXEStageReg exeStageReg(rst, clk, WB_EN_ID_R_OUT, memReadEn_ID_R_OUT, memWriteEn_ID_R_OUT, ALU_result_EXE_OUT, res2_ID_R_OUT, Dest_ID_R_OUT, WB_EN_EXE_R_OUT,
     MEM_R_EN_EXE_R_OUT, MEM_W_EN_EXE_R_OUT, ALU_result_EXE_R_OUT, ST_val_EXE_R_OUT, Dest_EXE_R_OUT);
   
-  DataMemory memStage(rst, clk, MEM_R_EN_EXE_R_OUT, MEM_W_EN_EXE_R_OUT, ALU_result_EXE_OUT, ST_val_EXE_R_OUT, MEM_result_MEM);
+  DataMemory memStage(rst, clk, MEM_R_EN_EXE_R_OUT, MEM_W_EN_EXE_R_OUT, ALU_result_EXE_R_OUT, ST_val_EXE_R_OUT, MEM_result_MEM);
   
   MemStageReg memStageReg(rst, clk, WB_EN_EXE_R_OUT, MEM_R_EN_EXE_R_OUT, ALU_result_EXE_R_OUT, MEM_result_MEM, Dest_EXE_R_OUT, WB_EN_MEM_R_OUT, MEM_R_en_MEM_R_OUT,
     ALU_result_MEM_R_OUT, Mem_read_value_MEM_R_OUT, Dest_R_OUT);

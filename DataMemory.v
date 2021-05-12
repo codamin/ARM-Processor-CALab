@@ -7,7 +7,7 @@ module DataMemory(rst, clk, readSig, writeSig, address, dataIn, dataOut);
   reg[31:0] memory[0:64535];
   integer i;
   
-  wire[15:0] addr;
+  wire[31:0] addr;
   assign addr = (address - 11'b10000000000) >> 2;
   assign dataOut = memory[addr];
   
