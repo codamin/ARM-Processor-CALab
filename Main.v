@@ -31,11 +31,12 @@ module Main(rst, clk);
   wire WB_EN_MEM_R_OUT, MEM_R_en_MEM_R_OUT;
   wire[31:0] ALU_result_MEM_R_OUT, Mem_read_value_MEM_R_OUT;
   wire[3:0] Dest_R_OUT;
+  wire branch_ID_R_OUT;
   
   wire[31:0] WB_value;
  //*****************************************************************************************************temp
   assign statusReg_EXE_OUT = 4'b0;
-  assign flush = 1'b0;
+  assign flush = branch_ID_R_OUT;
   assign branchTaken_EXE_OUT = 1'b0;
  //*****************************************************************************************************temp
 
