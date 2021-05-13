@@ -3,7 +3,7 @@ module Main(rst, clk);
 
   input rst, clk;
 
-  wire[31:0] branchAddress_EXE_OUT;
+  // wire[31:0] branchAddress_EXE_OUT;
   wire flush, hazard;
   wire[31:0] PC_IF_OUT, instructionReg_IF_OUT;
   wire[3:0] destWB_EXE_OUT, statusReg_EXE_OUT;
@@ -35,15 +35,15 @@ module Main(rst, clk);
   
   wire[31:0] WB_value;
  //*****************************************************************************************************temp
-  assign statusReg_EXE_OUT = 4'b0;
+  // assign statusReg_EXE_OUT = 4'b0;
   assign flush = branch_ID_R_OUT;
-  assign branchTaken_EXE_OUT = 1'b0;
+  assign branchTaken_EXE_OUT = branch_ID_R_OUT;
  //*****************************************************************************************************temp
 
-  IFStage iFStage(rst, clk, hazard, branchTaken_EXE_OUT, branchAddress_EXE_OUT, PC_IF_OUT, instructionReg_IF_OUT);
+  IFStage iFStage(rst, clk, hazard, branchTaken_EXE_OUT, Br_addr_EXE_OUT, PC_IF_OUT, instructionReg_IF_OUT);
 
   IDStage iDStage(.rst(rst), .clk(clk), .flush(flush), .PCIn(PC_IF_OUT), .instructionReg(instructionReg_IF_OUT),
-    .WB_EN_IN(WB_EN_MEM_R_OUT), .destWB(Dest_R_OUT), .valueWB(WB_value), .hazard(hazard), .statusReg(statusReg_EXE_OUT),
+    .WB_EN_IN(WB_EN_MEM_R_OUT), .destWB(Dest_R_OUT), .valueWB(WB_value), .hazard(hazard), .statusReg(status_EXE_OUT),
    .S_UpdateSig(S_UpdateSig_ID_OUT), .branch(branch_ID_OUT), .memWriteEn(memWriteEn_ID_OUT), .memReadEn(memReadEn_ID_OUT),
    .WB_EN(WB_EN_ID_OUT), .exeCMD(exeCMD_ID_OUT), .res1(res1_ID_OUT), .res2(res2_ID_OUT), .PC(PC_ID_OUT),
    .signedImm24(SignedImm24_ID_OUT), .Dest(Dest_ID_OUT), .isImmidiate(isImmidiate_ID_OUT), .shiftOperand(shiftOperand_ID_OUT), .two_src(two_src), .src1(src1), .src2(src2));
