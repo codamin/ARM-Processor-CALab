@@ -37,7 +37,7 @@ module ControlUnit(mode, opcode, S, S_UpdateSig, branch, exeCMD, memWriteEn, mem
                 {4'b0000, 1'b0, 1'b1, 1'b0, 1'b0, 1'b0};
             end
         default
-            {exeCMD, S_UpdateSig, branch, memWriteEn, memReadEn, WB_EN} <= 10'bz;
+            {exeCMD, S_UpdateSig, branch, memWriteEn, memReadEn, WB_EN} <= 10'bz; // to zero
         endcase
     end
 endmodule

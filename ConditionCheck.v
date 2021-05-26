@@ -26,6 +26,6 @@ always @(*)
         4'b1101: conditionOut <= Z || N!=V ;
         4'b1110: conditionOut <= 1 ;
 	default:
-		conditionOut <= 1'bz ;
+		conditionOut <= 1'bz ; // to zero | 1
     endcase
 endmodule

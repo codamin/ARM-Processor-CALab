@@ -20,7 +20,7 @@ module ALU(in1, in2, carry, command, out, status);
   assign out = (command == 4'b1000) ? in1^in2 : 32'bz;
   assign out = (command == 4'b0100) ? in1-in2 : 32'bz;
   assign out = (command == 4'b0110) ? in1&in2 : 32'bz;
-  assign out = (command == 4'b0010) ? in1+in2 : 32'bz;
+  assign out = (command == 4'b0010) ? in1+in2 : 32'bz; //TODO: no 32'bz and two of ++
   
   assign Z = (out == 32'b0) ? 1 : 0;
   assign N = out[31];
