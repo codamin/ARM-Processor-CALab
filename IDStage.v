@@ -1,7 +1,8 @@
 `timescale 1ns/1ns
 
 module IDStage(rst, clk, flush, PCIn, instructionReg, WB_EN_IN, destWB, valueWB, hazard, statusReg,
-  S_UpdateSig, branch, memWriteEn, memReadEn, WB_EN, exeCMD, res1, res2, PC, signedImm24, Dest, isImmidiate, shiftOperand, two_src, src1, src2);
+  S_UpdateSig, branch, memWriteEn, memReadEn, WB_EN, exeCMD, res1, res2, PC, signedImm24, Dest, isImmidiate,
+   shiftOperand, two_src, src1, src2);
   //inputs from IF Stage 
   input rst, clk, flush, hazard;
   input[31:0] PCIn, instructionReg;

@@ -1,5 +1,7 @@
 `timescale 1ns/1ns
-module EXEStageReg(rst, clk, WB_en_in, MEM_R_EN_in, MEM_W_EN_in, ALU_result_in, ST_val_in, Dest_in, WB_en, MEM_R_EN, MEM_W_EN, ALU_result, ST_val, Dest);
+module EXEStageReg(rst, clk, WB_en_in, MEM_R_EN_in, MEM_W_EN_in, ALU_result_in, ST_val_in, Dest_in, WB_en,
+ MEM_R_EN, MEM_W_EN, ALU_result, ST_val, Dest);
+ 
   input rst, clk, WB_en_in, MEM_R_EN_in, MEM_W_EN_in;
   input[31:0] ALU_result_in, ST_val_in;
   input[3:0] Dest_in;
@@ -17,6 +19,7 @@ module EXEStageReg(rst, clk, WB_en_in, MEM_R_EN_in, MEM_W_EN_in, ALU_result_in, 
       {WB_en, MEM_R_EN, MEM_W_EN} <= {WB_en_in, MEM_R_EN_in, MEM_W_EN_in};
       {ALU_result, ST_val} <= {ALU_result_in, ST_val_in};
       Dest <= Dest_in;
+      
     end
   end
 endmodule

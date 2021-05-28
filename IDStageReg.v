@@ -1,9 +1,9 @@
 `timescale 1ns/1ns
 
 module IDStageReg(rst, clk, flush, S_UpdateSigIn, branchIn, memWriteEnIn, memReadEnIn,
- WB_EN_IN, exeCMDIn, res1In, res2In, PCIn, signedImm24In, DestIn, isImmidiateIn, shiftOperandIn, carryIn,
+ WB_EN_IN, exeCMDIn, res1In, res2In, PCIn, signedImm24In, DestIn, isImmidiateIn, shiftOperandIn, carryIn, src1In, src2In,
   S_UpdateSig, branch, memWriteEn, memReadEn, WB_EN, exeCMD, res1, res2, PC, signedImm24, Dest,
-   isImmidiate, shiftOperand, carry);
+   isImmidiate, shiftOperand, carry, src1, src2);
 
   input clk, rst, flush;
   input S_UpdateSigIn, branchIn, memWriteEnIn, memReadEnIn, WB_EN_IN;
@@ -15,6 +15,7 @@ module IDStageReg(rst, clk, flush, S_UpdateSigIn, branchIn, memWriteEnIn, memRea
   input isImmidiateIn;
   input[11:0] shiftOperandIn;
   input carryIn;
+  input[3:0] src1In, src2In;
 
   output reg S_UpdateSig, branch, memWriteEn, memReadEn, WB_EN;
   output reg[3:0] exeCMD;
@@ -25,12 +26,13 @@ module IDStageReg(rst, clk, flush, S_UpdateSigIn, branchIn, memWriteEnIn, memRea
   output reg isImmidiate;
   output reg[11:0] shiftOperand;
   output reg carry;
+  output reg[3:0] src1, src2;
   
 
   always@(posedge clk, posedge rst) begin
     if(rst || flush) begin
         {S_UpdateSig, branch, memWriteEn, memReadEn, WB_EN, exeCMD, res1, res2, PC, signedImm24, Dest,
-        isImmidiate, shiftOperand} <= 0;
+        isImmidiate, shiftOperand, carry, src1, src2} <= 0;
     end
 
     else begin
@@ -38,16 +40,18 @@ module IDStageReg(rst, clk, flush, S_UpdateSigIn, branchIn, memWriteEnIn, memRea
         branch       <= branchIn;
         memWriteEn   <= memWriteEnIn;
         memReadEn    <= memReadEnIn;
-        WB_EN  <= WB_EN_IN;
+        WB_EN        <= WB_EN_IN;
         exeCMD       <= exeCMDIn;
         res1         <= res1In;
         res2         <= res2In;
         PC           <= PCIn;
         signedImm24  <= signedImm24In;
-        Dest          <= DestIn;
+        Dest         <= DestIn;
         isImmidiate  <= isImmidiateIn;
         shiftOperand <= shiftOperandIn;
         carry        <= carryIn;
+        src1         <= src1In;
+        src2         <= src2In;
     end
 
   end

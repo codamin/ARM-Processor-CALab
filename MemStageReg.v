@@ -1,6 +1,7 @@
 `timescale 1ns/1ns
 
-module MemStageReg(rst, clk, WB_en_in, MEM_R_en_in, ALU_result_in, Mem_read_value_in, Dest_in, WB_en, MEM_R_en, ALU_result, Mem_read_value, Dest);
+module MemStageReg(rst, clk, WB_en_in, MEM_R_en_in, ALU_result_in, Mem_read_value_in, Dest_in, WB_en, MEM_R_en, ALU_result,
+ Mem_read_value, Dest);
   input rst, clk, WB_en_in, MEM_R_en_in;
   input[31:0] ALU_result_in, Mem_read_value_in;
   input[3:0] Dest_in;
