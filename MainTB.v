@@ -2,7 +2,7 @@
 
 module MainTB();
   reg rst=0, clk=0, FW_EN=1;
-  reg[15:0] counter=7'b0;
+  reg[15:0] counter=16'b0;
   Main UUT(rst, clk, FW_EN);
   always #10 begin
     clk=~clk;
@@ -14,6 +14,6 @@ module MainTB();
   initial begin
     rst = 1;
     #5 rst = 0;
-    #6500 $stop;
+    #6000 $stop;
   end
 endmodule
