@@ -28,14 +28,14 @@ module SRAM_Controller(clk, rst, write_en, read_en, address, writeData, readData
       idle: ns = read_en ? read : write_en ? write : idle;
       write: begin
         ns = waitW;
-        waitStep = 0;
+        waitStep = 1;
       end
       read: begin
         ns = waitR;
-        waitStep = 0;
+        waitStep = 1;
       end
       waitW: begin
-        if(waitStep == 4) begin
+        if(waitStep == 3) begin
           ns = en;
         end
         else begin
@@ -44,7 +44,7 @@ module SRAM_Controller(clk, rst, write_en, read_en, address, writeData, readData
         end
       end
       waitW2: begin
-        if(waitStep == 4) begin
+        if(waitStep == 3) begin
           ns = en;
         end
         else begin
@@ -54,7 +54,7 @@ module SRAM_Controller(clk, rst, write_en, read_en, address, writeData, readData
       end
 
       waitR: begin
-        if(waitStep == 4) begin
+        if(waitStep == 3) begin
           ns = en;
         end
         else begin
@@ -63,7 +63,7 @@ module SRAM_Controller(clk, rst, write_en, read_en, address, writeData, readData
         end
       end
       waitR2: begin
-        if(waitStep == 4) begin
+        if(waitStep == 3) begin
           ns = en;
         end
         else begin
