@@ -5,7 +5,7 @@ module SRAM(clk, rst, SRAM_WE_N, SRAM_ADDR, SRAM_DQ);
   input[16:0] SRAM_ADDR;
   inout[31:0] SRAM_DQ;
   
-  reg[31:0] memory[0:511];
+  reg[31:0] memory[0:131071];
   assign #30 SRAM_DQ = SRAM_WE_N ? memory[SRAM_ADDR] : 32'bzzzz_zzzz_zzzz_zzzz_zzzz_zzzz_zzzz_zzzz;
   
   always@(posedge clk) begin
