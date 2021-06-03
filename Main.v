@@ -48,7 +48,7 @@ module Main(rst, clk, FW_EN);
    .signedImm24(SignedImm24_ID_OUT), .Dest(Dest_ID_OUT), .isImmidiate(isImmidiate_ID_OUT), .shiftOperand(shiftOperand_ID_OUT),
    .two_src(two_src), .src1(src1_ID_OUT), .src2(src2_ID_OUT));
 
-  IDStageReg iDStageReg(.rst(rst), .clk(clk), .flush(flush), .S_UpdateSigIn(S_UpdateSig_ID_OUT), .branchIn(branch_ID_OUT),
+  IDStageReg iDStageReg(.rst(rst), .clk(clk),.freeze(1'b0), .flush(flush), .S_UpdateSigIn(S_UpdateSig_ID_OUT), .branchIn(branch_ID_OUT),
     .memWriteEnIn(memWriteEn_ID_OUT), .memReadEnIn(memReadEn_ID_OUT), .WB_EN_IN(WB_EN_ID_OUT), .exeCMDIn(exeCMD_ID_OUT),
     .res1In(res1_ID_OUT), .res2In(res2_ID_OUT), .PCIn(PC_ID_OUT), .signedImm24In(SignedImm24_ID_OUT), .DestIn(Dest_ID_OUT),
     .isImmidiateIn(isImmidiate_ID_OUT), .shiftOperandIn(shiftOperand_ID_OUT), .carryIn(status_EXE_OUT[1]), .src1In(src1_ID_OUT), .src2In(src2_ID_OUT),
@@ -67,12 +67,12 @@ module Main(rst, clk, FW_EN);
    res1_ID_R_OUT, res2_ID_R_OUT, isImmidiate_ID_R_OUT, shiftOperand_ID_R_OUT, Signed_imm_24_ID_R_OUT, ALU_result_EXE_R_OUT,
     WB_value, sel1_FW_OUT, sel2_FW_OUT, ST_val_EXE_OUT, ALU_result_EXE_OUT, Br_addr_EXE_OUT, status_EXE_OUT);
 
-  EXEStageReg exeStageReg(rst, clk, WB_EN_ID_R_OUT, memReadEn_ID_R_OUT, memWriteEn_ID_R_OUT, ALU_result_EXE_OUT, ST_val_EXE_OUT,
+  EXEStageReg exeStageReg(rst, clk, 1'b0, WB_EN_ID_R_OUT, memReadEn_ID_R_OUT, memWriteEn_ID_R_OUT, ALU_result_EXE_OUT, ST_val_EXE_OUT,
    Dest_ID_R_OUT, WB_EN_EXE_R_OUT, MEM_R_EN_EXE_R_OUT, MEM_W_EN_EXE_R_OUT, ALU_result_EXE_R_OUT, ST_val_EXE_R_OUT, Dest_EXE_R_OUT);
   
   DataMemory memStage(rst, clk, MEM_R_EN_EXE_R_OUT, MEM_W_EN_EXE_R_OUT, ALU_result_EXE_R_OUT, ST_val_EXE_R_OUT, MEM_result_MEM);
   
-  MemStageReg memStageReg(rst, clk, WB_EN_EXE_R_OUT, MEM_R_EN_EXE_R_OUT, ALU_result_EXE_R_OUT, MEM_result_MEM, Dest_EXE_R_OUT,
+  MemStageReg memStageReg(rst, clk, 1'b0, WB_EN_EXE_R_OUT, MEM_R_EN_EXE_R_OUT, ALU_result_EXE_R_OUT, MEM_result_MEM, Dest_EXE_R_OUT,
    WB_EN_MEM_R_OUT, MEM_R_en_MEM_R_OUT, ALU_result_MEM_R_OUT, Mem_read_value_MEM_R_OUT, Dest_MEM_R_OUT);
     
   WBStage wbStage(ALU_result_MEM_R_OUT, Mem_read_value_MEM_R_OUT, MEM_R_en_MEM_R_OUT, WB_value);

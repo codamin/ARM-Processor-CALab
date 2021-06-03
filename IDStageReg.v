@@ -1,11 +1,11 @@
 `timescale 1ns/1ns
 
-module IDStageReg(rst, clk, flush, S_UpdateSigIn, branchIn, memWriteEnIn, memReadEnIn,
+module IDStageReg(rst, clk, freeze, flush, S_UpdateSigIn, branchIn, memWriteEnIn, memReadEnIn,
  WB_EN_IN, exeCMDIn, res1In, res2In, PCIn, signedImm24In, DestIn, isImmidiateIn, shiftOperandIn, carryIn, src1In, src2In,
   S_UpdateSig, branch, memWriteEn, memReadEn, WB_EN, exeCMD, res1, res2, PC, signedImm24, Dest,
    isImmidiate, shiftOperand, carry, src1, src2);
 
-  input clk, rst, flush;
+  input clk, rst, freeze, flush;
   input S_UpdateSigIn, branchIn, memWriteEnIn, memReadEnIn, WB_EN_IN;
   input[3:0] exeCMDIn;
   input[31:0] res1In, res2In;
@@ -30,12 +30,15 @@ module IDStageReg(rst, clk, flush, S_UpdateSigIn, branchIn, memWriteEnIn, memRea
   
 
   always@(posedge clk, posedge rst) begin
-    if(rst || flush) begin
+    if(rst) begin
         {S_UpdateSig, branch, memWriteEn, memReadEn, WB_EN, exeCMD, res1, res2, PC, signedImm24, Dest,
         isImmidiate, shiftOperand, carry, src1, src2} <= 0;
     end
-
-    else begin
+    else if(flush) begin
+        {S_UpdateSig, branch, memWriteEn, memReadEn, WB_EN, exeCMD, res1, res2, PC, signedImm24, Dest,
+        isImmidiate, shiftOperand, carry, src1, src2} <= 0;
+    end
+    else if(freeze == 1'b0) begin
         S_UpdateSig  <= S_UpdateSigIn;
         branch       <= branchIn;
         memWriteEn   <= memWriteEnIn;
