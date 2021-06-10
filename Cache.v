@@ -1,9 +1,9 @@
 `timescale 1ns/1ns
-module Cache(rst, clk, addr, R_EN, W_EN, data_in, hit, data_out);
+module Cache(rst, clk, addr, R_EN, W_EN, data_in, invalidate, WB_EN, hit, data_out);
   input rst, clk;
   input[18:0] addr;
-  input R_EN, W_EN;
-  input [31:0] data_in;
+  input R_EN, W_EN, invalidate, WB_EN;
+  input [63:0] data_in;
   output hit;
   output[31:0] data_out;
 /////////////////////////////////////////////////
