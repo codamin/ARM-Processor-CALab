@@ -6,10 +6,8 @@ module SRAM(clk, rst, SRAM_WE_N, SRAM_ADDR, SRAM_DQ);
   inout[63:0] SRAM_DQ;
   
   reg[31:0] memory[0:131071];
-  wire first_word_addr;
-  wire second word_addr;
-  assign higher_word= memory[{SRAM_ADDR[16:1], 1'b1}];
-  assign lower_word = momory[{SRAM_ADDR[16:1], 1'b0}];
+  assign higher_word = memory[{SRAM_ADDR[16:1], 1'b1}];
+  assign lower_word = memory[{SRAM_ADDR[16:1], 1'b0}];
   assign #30 SRAM_DQ = SRAM_WE_N ? {higher_word, lower_word} : 64'bz;
   
   always@(posedge clk) begin

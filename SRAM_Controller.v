@@ -21,7 +21,7 @@ module SRAM_Controller(clk, rst, write_en, read_en, address, writeData, readData
   integer waitStep = 0;
   parameter[2:0] idle=0, read=1, write=2, waitW=3, waitW2=4, waitR=5, waitR2=6, en=7;
 
-  assign SRAM_DQ = (ps==write | ps == waitW | ps == waitW2) ? SRAM_DQ_TMP : 32'bzzzz_zzzz_zzzz_zzzz_zzzz_zzzz_zzzz_zzzz;
+  assign SRAM_DQ = (ps==write | ps == waitW | ps == waitW2) ? SRAM_DQ_TMP : 32'bz;
 
   always@(*) begin
 		case(ps)

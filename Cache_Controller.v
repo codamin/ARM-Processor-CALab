@@ -8,7 +8,7 @@ module CacheController(input rst, input clk,
     output [31:0] rdata,
     output ready,
 // SRAM controller
-    output [31:0] sram_address,
+    output [16:0] sram_address,
     output [31:0] sram_wdata,
     output reg sram_write,
     input [63:0] sram_rdata,
